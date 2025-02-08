@@ -1,0 +1,134 @@
+:root {
+    /* Backgrounds */
+    --background-image: url(/assets/images/background1.png);
+    --grid-color: #0d1d32;
+    --bottom: #1f2c48;
+    --button-background: #1f2c48;
+
+    /* Game Colors */
+    --blue: #2484d4;
+    --red: #fc699c;
+    --lines: #ed74a7;
+    --grey: #615f78;
+
+    /* Text & Highlight Colors */
+    --text-color: #ffffff;
+    --highlight-color: #f9866d;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    font-family: "Comic Neue", serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.cells,
+td {
+    font-family: "Comic Neue", serif;
+    background-color: var(--grid-color);
+    width: 100%;
+    height: 100px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-size: 80px;
+    margin: 0;
+}
+
+#cell_2,
+#cell_5,
+#cell_8 {
+    border-left: 3px solid var(--lines);
+    border-right: 3px solid var(--lines);
+}
+
+#cell_5,
+#cell_4,
+#cell_6 {
+    border-top: 3px solid var(--lines);
+    border-bottom: 3px solid var(--lines);
+}
+
+#cell_1 {
+    border-radius: 10px 0px 0px 0px;
+}
+
+#cell_3 {
+    border-radius: 0px 10px 0px 0px;
+}
+
+#cell_7 {
+    border-radius: 0px 0px 0px 10px;
+}
+
+#cell_9 {
+    border-radius: 0px 0px 10px 0px;
+}
+
+tr {
+    justify-content: center;
+    display: flex;
+    background-color: var(--background-color);
+    margin: 0;
+    width: 100%;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#score {
+    top: 0;
+}
+
+#container_game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 800px;
+}
+
+.highlight {
+    background-color: rgb(188, 188, 38);
+}
+
+#tabla_game {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.disabled_cell {
+    pointer-events: none;
+}
+
+#btnRestart {
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--red);
+    background: var(--grid-color);
+    margin-bottom: 2em;
+    font-weight: 600;
+    font-family: "Comic Neue", serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
