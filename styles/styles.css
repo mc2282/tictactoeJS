@@ -1,6 +1,6 @@
 :root {
     /* Backgrounds */
-    --background-image: url(/assets/images/background1.png);
+    --background-image: url(./assets/images/background1.png);
     --grid-color: #0d1d32;
     --bottom: #1f2c48;
     --button-background: #1f2c48;
